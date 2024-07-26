@@ -1,3 +1,5 @@
+@import url('');
+
 :root{
     --cor-fundo: #01080E ;
     --cor-principal: #0B0D20 ;
@@ -10,6 +12,7 @@
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
+    font-family: 'Inter', sans-serif ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +31,10 @@ h1{
     color: var(--cor-destaque);
 }
 
+h1, .caixa-perguntas, .caixa-resultado{
+    font-family: 'Chakra Petch', sans-serif; 
+}
+
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
@@ -40,4 +47,16 @@ button {
 button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+}
+
+.caixa-alternativas{
+    display: flex;
+}
+
+.caixa-resultado{
+    display : none;
+}
+
+.caixa-resultado.mostrar{
+    display: block;
 }
